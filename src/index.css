@@ -1,0 +1,45 @@
+.titulo-monitor {
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+/*.cards-container{
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  margin-bottom: 2%;
+}*/
+
+.cards {
+  margin-bottom: 25px;
+  width: 280px;
+}
+
+.chart {
+  margin-top: 5%;
+  padding: 4% 10% 2% 4%;
+  margin-bottom: 2%;
+  border-radius: 25px;
+}
+
+.recharts-surface {
+  margin-top: 1%;
+}
+
+.recharts-legend-wrapper {
+  padding-bottom: 4% !important;
+  width: 100% !important;
+}
+
+.recharts-default-legend {
+  margin-top: 2.3% !important;
+  padding-top: 2.3% !important;
+}
+
+.div-show-metrics {
+  margin-bottom: 3%;
+}
+
+.export-button {
+  cursor: pointer;
+  margin-bottom: 5%;
+}
