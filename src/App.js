@@ -7,11 +7,19 @@ import jsPDF from "jspdf";
 
 const entorno = "PROD"
 
-
-const socket = io( entorno === "PROD"
+/*const socket = io( entorno === "PROD"
     ? "https://smartwach-cardiaco-backend-b7hsf9b8a4fwhadt.brazilsouth-01.azurewebsites.net/"
     : "http://localhost:6548"
-);
+);*/
+
+
+const socket = io("https://smartwach-cardiaco-backend-b7hsf9b8a4fwhadt.brazilsouth-01.azurewebsites.net/", {
+  transports: ["websocket"], // Fuerza WebSocket y evita problemas con polling en Azure
+  withCredentials: true, // Envía cookies si usas autenticación
+  reconnectionAttempts: 5, // Intenta reconectar hasta 5 veces en caso de error
+  timeout: 5000, // Tiempo de espera de 5s antes de cancelar la conexión
+});
+
 
 
 function App() {
