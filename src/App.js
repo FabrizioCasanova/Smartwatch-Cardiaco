@@ -5,8 +5,6 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "r
 import Papa from "papaparse";
 import jsPDF from "jspdf";
 
-const entorno = "PROD"
-
 /*const socket = io( entorno === "PROD"
     ? "https://smartwach-cardiaco-backend-b7hsf9b8a4fwhadt.brazilsouth-01.azurewebsites.net/"
     : "http://localhost:6548"
