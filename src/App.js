@@ -12,6 +12,8 @@ const entorno = "PROD"
     : "http://localhost:6548"
 );*/
 
+//
+
 
 const socket = io("https://smartwach-cardiaco-backend-b7hsf9b8a4fwhadt.brazilsouth-01.azurewebsites.net/", {
   transports: ["websocket"], // Fuerza WebSocket y evita problemas con polling en Azure
